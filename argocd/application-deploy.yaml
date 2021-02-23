@@ -3,6 +3,13 @@ items:
 - apiVersion: v1
   kind: Secret
   metadata:
+    name: argocd-test-secret
+  stringData:
+    database-password: password
+    database-user: test
+- apiVersion: v1
+  kind: Secret
+  metadata:
     labels:
       app: sample-spring-boot
       template: sample-spring-boot
